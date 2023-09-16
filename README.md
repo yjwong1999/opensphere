@@ -1,13 +1,18 @@
 ## Retrain OpenSphere Model
 
+- Clone the repo
+```
+git clone https://github.com/yjwong1999/opensphere.git
+cd opensphere
+```
+
 - Create a new conda environment to train OpenSphere
 ```
 conda deactivate # if you are in other conda environment
 conda env create -f environment.yml
 conda activate opensphere
 
-# assuming you are in Yolov5_DeepSort_Face/Yolov5_DeepSort_Face
-cd opensphere
+# Choose one of the following
 bash scripts/dataset_setup_validation_only.sh    # if you only want to train with your custom dataset
 OR
 bash scripts/dataset_setup.sh                     # if you want to train with VGG Face 2 dataet
