@@ -72,3 +72,11 @@ CUDA_VISIBLE_DEVICES=0 python test.py --config config/test/survface.yml --proj_d
 ```
 CUDA_VISIBLE_DEVICES=0 python onnx_exporter.py --config config/test/survface.yml --proj_dir project/<dir name>
 ```
+
+
+## Acknowledgement
+This work was supported by the Greatech Integration (M) Sdn Bhd with project number 8084-0008.
+
+### Reference Code
+1. [OpenSphere Face Recognition](https://github.com/ydwen/opensphere) </br>
+2. [YOLOv5 DeepSort Face](https://github.com/yjwong1999/Yolov5_DeepSort_Face) </br>
