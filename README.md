@@ -81,3 +81,9 @@ This work was supported by the Greatech Integration (M) Sdn Bhd with project num
 ### Reference Code
 1. [OpenSphere Face Recognition](https://github.com/ydwen/opensphere) </br>
 2. [YOLOv5 DeepSort Face](https://github.com/yjwong1999/Yolov5_DeepSort_Face) </br>
+
+This repo is mainly based on ref work [1]. </br>
+We intend to fork the repo from [1], however we previously have to combine the full source code with ref work [2]. </br>
+Hence, we couldn't fork ref work [1] for acknowledgement purpose. </br>
+Anyway, thanks a lot to [1] for the open-source + transparent + reproducible code! </br>
+The codes allow us to train our own face recognition model. </br>
