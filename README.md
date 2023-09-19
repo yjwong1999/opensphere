@@ -1,7 +1,7 @@
-# Training OpenSphere Model using QMUL_SurvFace or any Custom Dataset
+# Training your OpenSphere Face Recognition Model using QMUL_SurvFace or any Custom Dataset
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hz4Vw3kqka55KDx8jeKLoOWOxJdVCzCt?usp=sharing) </br>
-Train OpenSphere on QMUL-Survface dataset
+This Colab teach you how to train your OpenSPhere Face Recognition model on your custom dataset!
 
 This repo is part of the **IEEE World AI IoT Congress 2023** </br>
 Refer [YOLOv5 DeepSort Face](https://github.com/yjwong1999/Yolov5_DeepSort_Face) for the main implementation of the project. </br>
