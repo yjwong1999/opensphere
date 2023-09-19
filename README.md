@@ -88,7 +88,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py --config config/test/survface.yml --proj_d
 CUDA_VISIBLE_DEVICES=0 python onnx_exporter.py --config config/test/survface.yml --proj_dir project/<dir name>
 ```
 
-- Convert OONX to OpenVINO (for future usage)
+- Convert ONNX to OpenVINO (for future usage)
 ```
 # install openvino developer api
 !pip install -q "openvino-dev>=2023.0.0" "nncf>=2.5.0"
