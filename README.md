@@ -14,8 +14,11 @@ Multi-camera face detection and recognition is an Artificial Intelligence (AI) b
 
 ## Retrain OpenSphere Model
 
-This tutorial is mainly to retrain OpenSphere models on QMUL-SurvFace dataset </br>
-Please refer the colab link below for a more detailed tutorial to train your OpenSPhere model using your custom dataset </br>
+This tutorial below is mainly to 
+1.   setup the conda environment for OpenSPhere
+2.   retrain OpenSphere models on QMUL-SurvFace dataset </br>
+
+For a **painless tutorial** without worrying the envrionment setup, please refer the colab link below for a more detailed tutorial to train your OpenSPhere model using your **custom dataset** </br>
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hz4Vw3kqka55KDx8jeKLoOWOxJdVCzCt?usp=sharing)
 
 - Clone the repo
