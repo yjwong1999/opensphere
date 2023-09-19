@@ -81,6 +81,10 @@ CUDA_VISIBLE_DEVICES=0 python test.py --config config/test/survface.yml --proj_d
 
 - Convert OpenSphere Model to ONNX (for future usage)
 ```
+# install onnx api
+!pip install onnx==1.14.1
+
+# convert
 CUDA_VISIBLE_DEVICES=0 python onnx_exporter.py --config config/test/survface.yml --proj_dir project/<dir name>
 ```
 
@@ -88,6 +92,8 @@ CUDA_VISIBLE_DEVICES=0 python onnx_exporter.py --config config/test/survface.yml
 ```
 # install openvino developer api
 !pip install -q "openvino-dev>=2023.0.0" "nncf>=2.5.0"
+
+# convert
 !mo --input_model project/20230919_015358/models/backbone_10000.onnx --compress_to_fp16
 ```
 
