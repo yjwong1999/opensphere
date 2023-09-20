@@ -110,3 +110,17 @@ We intend to fork the repo from [1], however we previously have to combine the f
 Hence, we couldn't fork ref work [1] for acknowledgement purpose. </br>
 Anyway, thanks a lot to [1] for the open-source + transparent + reproducible code! </br>
 The codes allow us to train our own face recognition model. </br>
+
+
+## Cite this repository
+```
+@INPROCEEDINGS{10174362,
+  author={Wong, Yi Jie and Huang Lee, Kian and Tham, Mau-Luen and Kwan, Ban-Hoe},
+  booktitle={2023 IEEE World AI IoT Congress (AIIoT)}, 
+  title={Multi-Camera Face Detection and Recognition in Unconstrained Environment}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={0548-0553},
+  doi={10.1109/AIIoT58121.2023.10174362}}
+```
