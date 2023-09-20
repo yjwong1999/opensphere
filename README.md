@@ -94,7 +94,7 @@ CUDA_VISIBLE_DEVICES=0 python onnx_exporter.py --config config/test/survface.yml
 !pip install -q "openvino-dev>=2023.0.0" "nncf>=2.5.0"
 
 # convert
-!mo --input_model project/<dir name>/models/backbone_<iteration_num>.onnx --compress_to_fp16
+!mo --input_model project/<dir name>/models/backbone_<iteration_num>.onnx --input_shape [-1,3,112,112] --compress_to_fp16
 ```
 
 
