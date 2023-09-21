@@ -99,7 +99,7 @@ mo --input_model project/<dir name>/models/backbone_<iteration_num>.onnx --input
 
 ## Known Issue
 - [X] **Issue 1: Dynamic Batch Size for OpenVINO model** 
-- [ ] **Dynamic Batch Size for ONNX model**
+- [ ] **Issue 2: Dynamic Batch Size for ONNX model**
 
 Issue 1 is solved by using ```--input_shape [-1,C,H,W]``` when using OpenVINO model optimizer (mo), where -1 indicates dynamic batch size
 
