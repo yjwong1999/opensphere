@@ -82,7 +82,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py --config config/test/survface.yml --proj_d
 - Convert OpenSphere Model to ONNX (for future usage)
 ```
 # install onnx api
-!pip install onnx==1.14.1
+pip install onnx==1.14.1
 
 # convert
 CUDA_VISIBLE_DEVICES=0 python onnx_exporter.py --config config/test/survface.yml --proj_dir project/<dir name>
@@ -91,12 +91,17 @@ CUDA_VISIBLE_DEVICES=0 python onnx_exporter.py --config config/test/survface.yml
 - Convert ONNX to OpenVINO (for future usage)
 ```
 # install openvino developer api
-!pip install -q "openvino-dev>=2023.0.0" "nncf>=2.5.0"
+pip install -q "openvino-dev>=2023.0.0" "nncf>=2.5.0"
 
-# convert
-!mo --input_model project/<dir name>/models/backbone_<iteration_num>.onnx --input_shape [-1,3,112,112] --compress_to_fp16
+# convert to openvino file using model optimizer
+mo --input_model project/<dir name>/models/backbone_<iteration_num>.onnx --input_shape [-1,3,112,112] --compress_to_fp16
 ```
 
+## Known Issue
+- [X] **Issue 1: Dynamic Batch Size for OpenVINO model** 
+- [ ] **Dynamic Batch Size for ONNX model**
+
+Issue 1 is solved by using ```--input_shape [-1,C,H,W]``` when using OpenVINO model optimizer (mo), where -1 indicates dynamic batch size
 
 ## Acknowledgement
 This work was supported by the Greatech Integration (M) Sdn Bhd with project number 8084-0008.
